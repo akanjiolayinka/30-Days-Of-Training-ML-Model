@@ -1,6 +1,6 @@
 # 30 Days Of Datasets
 
-A 30-day data analysis and machine learning project series, exploring different datasets each day.
+A 30-day data analysis challenge focused on exploring real-world datasets, uncovering insights, and strengthening AI/ML foundations using Python.
 
 ## Project Structure
 
