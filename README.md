@@ -1,6 +1,6 @@
-# 30 Days of Datasets Challenge
+# 30 Days of Datasets - Machine Learning Journey
 
-A personal challenge to explore and analyze a different dataset every day for 30 days. This project focuses on building practical data analysis skills through hands-on exploration of diverse datasets, featuring data cleaning, exploratory data analysis, visualization, and machine learning.
+A personal 30-day machine learning journey where I train models on different datasets daily. This project documents my path to mastering ML through hands-on practice, building real predictive models, and developing production-ready pipelines across diverse problem domains.
 
 ## Project Structure
 
@@ -141,25 +141,40 @@ The following days are ready for data analysis but need datasets:
 
 ## Project Goals
 
-- ✅ Practice data cleaning and preparation techniques
+- ✅ Build practical machine learning skills through daily model training
+- ✅ Master data cleaning and feature engineering techniques
 - ✅ Develop proficiency in exploratory data analysis (EDA)
 - ✅ Create meaningful and interactive visualizations
 - ✅ Extract actionable insights from diverse datasets
-- ✅ Build machine learning models for prediction and classification
-- ✅ Develop a comprehensive portfolio of data analysis work
-- ✅ Master ensemble methods and model deployment
+- ✅ Train and optimize ML models for prediction and classification
+- ✅ Learn ensemble methods and advanced modeling techniques
+- ✅ Build production-ready pipelines and deployment workflows
+- ✅ Develop a comprehensive ML portfolio showcasing real-world projects
 
 ## Progress Tracker
 
 **Current Status:** 16/30 days have datasets ready ✨  
+**Models Trained:** Building ML expertise one model at a time  
 **Completion Rate:** 53.3%  
-**Next Milestone:** Upload remaining 14 datasets
+**Next Milestone:** Upload remaining 14 datasets and continue training
+
+---
+
+## My ML Learning Path
+
+This journey covers diverse ML problem types:
+- **Classification:** Fruit types, Iris species, Student performance categories
+- **Regression:** Housing prices, Insurance costs, Energy consumption, Car valuations
+- **Time Series:** GPU evolution trends, Energy patterns
+- **Multi-output:** Student scores prediction, Healthcare metrics
+- **Clustering:** Unified datasets, Meal patterns
+- **Ensemble Methods:** Advanced stacking, voting, and boosting techniques
 
 ---
 
 ## Contributing
 
-This is a personal learning project, but feel free to fork and create your own 30-day challenge! Suggestions and feedback are always welcome.
+This is my personal machine learning journey and learning project. Feel free to fork and create your own 30-day ML challenge! Follow along, learn together, and share your own model training experiences.
 
 ## License
 
@@ -168,7 +183,8 @@ This project is open source and available for educational purposes.
 ---
 
 **Challenge Duration:** 30 Days  
-**Start Date:** TBD  
-**End Date:** TBD  
+**Focus:** Daily ML model training and optimization  
+**Start Date:** January 2026  
+**Goal:** Master practical machine learning through consistent practice  
 
-Happy Analyzing! 📊🚀
+Happy Training! 🤖📊🚀
