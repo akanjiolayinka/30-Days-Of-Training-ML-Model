@@ -1,52 +1,174 @@
-# 30 Days Of Datasets
+# 30 Days of Datasets Challenge
 
-A 30-day data analysis challenge focused on exploring real-world datasets, uncovering insights, and strengthening AI/ML foundations using Python.
+A personal challenge to explore and analyze a different dataset every day for 30 days. This project focuses on building practical data analysis skills through hands-on exploration of diverse datasets, featuring data cleaning, exploratory data analysis, visualization, and machine learning.
 
 ## Project Structure
 
 Each day folder contains:
 - **data/** - Raw and processed datasets
-- **models/** - Machine learning models and saved files
-- **notebooks/** - Jupyter notebooks with analysis
-- **viz/** - Visualizations and charts
-- **README.md** - Day-specific documentation
+- **models/** - Trained machine learning models and saved pipelines
+- **notebooks/** - Jupyter notebooks with complete analysis
+- **viz/** - Visualizations, charts, and interactive plots
+- **README.md** - Day-specific documentation and insights
 
-## Days Overview
+---
 
-- Day 1: Netflix Data Analysis
-- Day 2: Earthquake & Tsunami Data
-- Day 5: Healthcare Staff & Patients Management
-- Day 6: Earthquake & Tsunami Analysis
-- Day 7: Fruit Classification
-- Day 9: Unified Dataset Analysis
-- Day 10: Insurance Data
-- Day 13: GPU Performance (1986-2026)
-- Day 16: Energy Consumption
-- Day 19: Students Performance
-- Day 22: Housing Price Prediction
-- Day 23: Unified Dataset
-- Day 25: Iris Classification
-- Day 26: Goodreads Books Dataset
-- Day 28: Meal Metadata & Food Data
-- Day 29: Car Price Prediction
-- Day 30: Housing Price Data
+## Daily Projects
+
+### 📊 Days with Datasets (Ready for Analysis)
+
+**Day 2: Earthquake & Tsunami Risk Assessment**
+- **Dataset:** `earthquake_data_tsunami.csv`
+- **Focus:** Seismic data analysis, tsunami prediction, global risk mapping
+- **Techniques:** Classification, geospatial analysis, temporal patterns
+
+**Day 5: Healthcare Staff & Patients Management**
+- **Datasets:** `patients.csv`, `staff.csv`, `services_weekly.csv`, `staff_schedule.csv`
+- **Focus:** Hospital operations, patient-staff relationships, resource optimization
+- **Techniques:** Multi-table analysis, scheduling optimization, healthcare analytics
+
+**Day 6: Earthquake & Tsunami Analysis (Advanced)**
+- **Dataset:** `earthquake_data_tsunami.csv`
+- **Focus:** Deep dive into seismic patterns, magnitude-depth relationships
+- **Techniques:** Advanced classification, feature engineering, risk modeling
+
+**Day 7: Fruit Classification**
+- **Dataset:** `fruit_classification_dataset.csv`
+- **Focus:** Multi-class classification of fruit types based on physical attributes
+- **Techniques:** Supervised learning, feature importance, classification models
+
+**Day 9: Unified Dataset Exploration**
+- **Dataset:** `UnifiedDataset.csv`
+- **Focus:** Comprehensive analysis of unified multi-domain data
+- **Techniques:** Exploratory data analysis, pattern recognition, clustering
+
+**Day 10: Medical Insurance Cost Analysis**
+- **Dataset:** `insurance.csv`
+- **Focus:** Healthcare costs prediction, demographic factors analysis
+- **Techniques:** Regression modeling, cost drivers identification, policy insights
+
+**Day 13: GPU Evolution Analysis (1986-2026)**
+- **Dataset:** `gpu_1986-2026.csv`
+- **Focus:** 40 years of GPU technology evolution, performance trends
+- **Techniques:** Time series analysis, technological progress modeling, forecasting
+
+**Day 16: Energy Consumption & Cost Prediction**
+- **Dataset:** `energy_consumption.csv`
+- **Focus:** Residential/commercial energy usage patterns, cost optimization
+- **Techniques:** Regression, consumption forecasting, efficiency analysis
+
+**Day 19: Student Performance Factors Analysis**
+- **Dataset:** `StudentsPerformance.csv`
+- **Focus:** Academic performance drivers, demographic impacts on scores
+- **Techniques:** Multi-output prediction, educational analytics, correlation analysis
+
+**Day 22: Housing Price Analysis & Prediction**
+- **Dataset:** `Housing_Price_Data.csv`
+- **Focus:** Real estate market analysis, price determinants
+- **Techniques:** Regression modeling, feature engineering, market trend analysis
+
+**Day 23: Unified Dataset Analysis (Advanced)**
+- **Dataset:** `UnifiedDataset.csv`
+- **Focus:** Advanced exploration of unified data, predictive modeling
+- **Techniques:** Ensemble methods, deep EDA, model comparison
+
+**Day 25: Iris Flower Classification**
+- **Dataset:** `iris.csv`
+- **Focus:** Classic ML dataset - species classification from measurements
+- **Techniques:** Multi-class classification, decision boundaries, model evaluation
+
+**Day 26: Goodreads Books Analysis**
+- **Dataset:** `goodreads_books_dataset.csv`
+- **Focus:** Book ratings analysis, author trends, reading preferences
+- **Techniques:** Text analytics, rating prediction, recommendation patterns
+
+**Day 28: Meal & Food Data Analysis**
+- **Datasets:** `Final_data.csv`, `meal_metadata.csv`
+- **Focus:** Nutritional analysis, meal patterns, food recommendations
+- **Techniques:** Multi-source data integration, nutritional modeling, clustering
+
+**Day 29: Car Price Prediction**
+- **Dataset:** `car_price_prediction_.csv`
+- **Focus:** Vehicle pricing analysis, depreciation patterns, market valuation
+- **Techniques:** Regression modeling, price prediction, automotive analytics
+
+**Day 30: Housing Price Prediction (Final Challenge)**
+- **Dataset:** `Housing_Price_Data.csv`
+- **Focus:** Comprehensive real estate analysis with ensemble methods
+- **Techniques:** Advanced regression, feature importance, production-ready pipeline
+
+---
+
+### 🔄 Days Pending Dataset Upload
+
+The following days are ready for data analysis but need datasets:
+
+- **Day 1** - _Dataset pending_
+- **Day 3** - _Dataset pending_
+- **Day 4** - _Dataset pending_
+- **Day 8** - _Dataset pending_
+- **Day 11** - _Dataset pending_
+- **Day 12** - _Dataset pending_
+- **Day 14** - _Dataset pending_
+- **Day 15** - _Dataset pending_
+- **Day 17** - _Dataset pending_
+- **Day 18** - _Dataset pending_
+- **Day 20** - _Dataset pending_
+- **Day 21** - _Dataset pending_
+- **Day 24** - _Dataset pending_
+- **Day 27** - _Dataset pending_
+
+---
 
 ## Getting Started
 
-1. Navigate to any day folder
-2. Check the README.md for that day's objectives
-3. Explore the notebooks in the `notebooks/` directory
-4. Data files are located in the `data/` folder
+1. **Navigate** to any day folder (e.g., `day2/`, `day5/`)
+2. **Check** the `README.md` for that day's objectives and insights
+3. **Explore** the Jupyter notebooks in the `notebooks/` directory
+4. **Review** visualizations in the `viz/` folder
+5. **Access** datasets in the `data/` folder
 
-## Technologies Used
+## Technologies & Tools
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib/Seaborn
-- Jupyter Notebooks
+- **Python 3.x** - Primary programming language
+- **Pandas** - Data manipulation and analysis
+- **NumPy** - Numerical computing
+- **Scikit-learn** - Machine learning models and pipelines
+- **Matplotlib/Seaborn** - Statistical visualizations
+- **Plotly** - Interactive visualizations
+- **Jupyter Notebooks** - Interactive development environment
+- **XGBoost/LightGBM/CatBoost** - Advanced ensemble methods
+
+## Project Goals
+
+- ✅ Practice data cleaning and preparation techniques
+- ✅ Develop proficiency in exploratory data analysis (EDA)
+- ✅ Create meaningful and interactive visualizations
+- ✅ Extract actionable insights from diverse datasets
+- ✅ Build machine learning models for prediction and classification
+- ✅ Develop a comprehensive portfolio of data analysis work
+- ✅ Master ensemble methods and model deployment
+
+## Progress Tracker
+
+**Current Status:** 16/30 days have datasets ready ✨  
+**Completion Rate:** 53.3%  
+**Next Milestone:** Upload remaining 14 datasets
+
+---
 
 ## Contributing
 
-This is a personal learning project, but feel free to fork and create your own 30-day challenge!
+This is a personal learning project, but feel free to fork and create your own 30-day challenge! Suggestions and feedback are always welcome.
+
+## License
+
+This project is open source and available for educational purposes.
+
+---
+
+**Challenge Duration:** 30 Days  
+**Start Date:** TBD  
+**End Date:** TBD  
+
+Happy Analyzing! 📊🚀
