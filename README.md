@@ -17,10 +17,20 @@ Each day folder contains:
 
 ### 📊 Days with Datasets (Ready for Analysis)
 
+**Day 1: Netflix Content Analysis & Recommendation Insights**
+- **Dataset:** `netflix_titles.csv`
+- **Focus:** Content strategy, genre trends, global production insights
+- **Techniques:** Text mining, NLP, time series, recommendation systems
+
 **Day 2: Earthquake & Tsunami Risk Assessment**
 - **Dataset:** `earthquake_data_tsunami.csv`
 - **Focus:** Seismic data analysis, tsunami prediction, global risk mapping
 - **Techniques:** Classification, geospatial analysis, temporal patterns
+
+**Day 3: BMI & Lifestyle Health Classification**
+- **Dataset:** `500_Person_Gender_Height_Weight_Index.csv`
+- **Focus:** Health index prediction from physical measurements
+- **Techniques:** Multi-class classification, health analytics, BMI modeling
 
 **Day 5: Healthcare Staff & Patients Management**
 - **Datasets:** `patients.csv`, `staff.csv`, `services_weekly.csv`, `staff_schedule.csv`
@@ -36,6 +46,11 @@ Each day folder contains:
 - **Dataset:** `fruit_classification_dataset.csv`
 - **Focus:** Multi-class classification of fruit types based on physical attributes
 - **Techniques:** Supervised learning, feature importance, classification models
+
+**Day 8: Global Weather Analysis & Climate Patterns**
+- **Dataset:** `GlobalWeatherRepository.csv`
+- **Focus:** Weather forecasting, air quality analysis, climate pattern recognition
+- **Techniques:** Time series, regression, geographic clustering, large-scale data processing
 
 **Day 9: Unified Dataset Exploration**
 - **Dataset:** `UnifiedDataset.csv`
@@ -123,10 +138,7 @@ Each day folder contains:
 
 The following days are ready for data analysis but need datasets:
 
-- **Day 1** - _Dataset pending_
-- **Day 3** - _Dataset pending_
 - **Day 4** - _Dataset pending_
-- **Day 8** - _Dataset pending_
 - **Day 11** - _Dataset pending_
 - **Day 12** - _Dataset pending_
 - **Day 15** - _Dataset pending_
@@ -169,10 +181,10 @@ The following days are ready for data analysis but need datasets:
 
 ## Progress Tracker
 
-**Current Status:** 20/30 days have datasets ready ✨  
+**Current Status:** 23/30 days have datasets ready ✨  
 **Models Trained:** Building ML expertise one model at a time  
-**Completion Rate:** 66.7%  
-**Next Milestone:** Upload remaining 10 datasets and continue training
+**Completion Rate:** 76.7%  
+**Next Milestone:** Upload remaining 7 datasets and continue training
 
 ---
 
