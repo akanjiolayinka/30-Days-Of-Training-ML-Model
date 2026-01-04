@@ -52,15 +52,30 @@ Each day folder contains:
 - **Focus:** 40 years of GPU technology evolution, performance trends
 - **Techniques:** Time series analysis, technological progress modeling, forecasting
 
+**Day 14: Mobile Phone Price Classification**
+- **Datasets:** `train.csv`, `test.csv`
+- **Focus:** Multi-class classification of phone price ranges based on specifications
+- **Techniques:** Classification models, feature importance, price range prediction
+
 **Day 16: Energy Consumption & Cost Prediction**
 - **Dataset:** `energy_consumption.csv`
 - **Focus:** Residential/commercial energy usage patterns, cost optimization
 - **Techniques:** Regression, consumption forecasting, efficiency analysis
 
+**Day 17: Employee Attrition & HR Analytics**
+- **Dataset:** `WA_Fn-UseC_-HR-Employee-Attrition.csv`
+- **Focus:** Predict employee turnover, identify retention risk factors
+- **Techniques:** Binary classification, imbalanced data handling, risk scoring
+
 **Day 19: Student Performance Factors Analysis**
 - **Dataset:** `StudentsPerformance.csv`
 - **Focus:** Academic performance drivers, demographic impacts on scores
 - **Techniques:** Multi-output prediction, educational analytics, correlation analysis
+
+**Day 21: Data Science Job Salaries Analysis**
+- **Dataset:** `ds_salaries.csv`
+- **Focus:** Salary trends across roles, experience levels, and locations (2020-2023)
+- **Techniques:** Regression modeling, market analysis, compensation prediction
 
 **Day 22: Housing Price Analysis & Prediction**
 - **Dataset:** `Housing_Price_Data.csv`
@@ -81,6 +96,11 @@ Each day folder contains:
 - **Dataset:** `goodreads_books_dataset.csv`
 - **Focus:** Book ratings analysis, author trends, reading preferences
 - **Techniques:** Text analytics, rating prediction, recommendation patterns
+
+**Day 27: Wine Quality Classification**
+- **Dataset:** `winequality-red.csv`
+- **Focus:** Red wine quality prediction from physicochemical properties
+- **Techniques:** Multi-class classification, chemistry analysis, quality scoring
 
 **Day 28: Meal & Food Data Analysis**
 - **Datasets:** `Final_data.csv`, `meal_metadata.csv`
@@ -109,14 +129,10 @@ The following days are ready for data analysis but need datasets:
 - **Day 8** - _Dataset pending_
 - **Day 11** - _Dataset pending_
 - **Day 12** - _Dataset pending_
-- **Day 14** - _Dataset pending_
 - **Day 15** - _Dataset pending_
-- **Day 17** - _Dataset pending_
 - **Day 18** - _Dataset pending_
 - **Day 20** - _Dataset pending_
-- **Day 21** - _Dataset pending_
 - **Day 24** - _Dataset pending_
-- **Day 27** - _Dataset pending_
 
 ---
 
@@ -153,10 +169,10 @@ The following days are ready for data analysis but need datasets:
 
 ## Progress Tracker
 
-**Current Status:** 16/30 days have datasets ready ✨  
+**Current Status:** 20/30 days have datasets ready ✨  
 **Models Trained:** Building ML expertise one model at a time  
-**Completion Rate:** 53.3%  
-**Next Milestone:** Upload remaining 14 datasets and continue training
+**Completion Rate:** 66.7%  
+**Next Milestone:** Upload remaining 10 datasets and continue training
 
 ---
 
