@@ -1,5 +1,7 @@
 # Day 25: Iris Flower Classification - Classic Machine Learning
 
+**Author:** Olayinka Akanji
+
 ## Project Overview
 
 This project tackles the classic Iris flower classification problem, one of the most well-known datasets in machine learning. Using four simple flower measurements, we build models to accurately classify iris flowers into three species, demonstrating fundamental classification techniques and achieving near-perfect accuracy.
