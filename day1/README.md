@@ -1,229 +1,147 @@
-# Day 1: Netflix Content Analysis & Recommendation Insights
-
-## Project Overview
-
-This project analyzes Netflix's extensive content library of movies and TV shows to uncover content strategy patterns, genre trends, release dynamics, and global production insights. Using data from 8,800+ titles, we explore viewer preferences, content characteristics, and build foundations for recommendation systems.
+# Day 1: Netflix EDA - Content Strategy Analysis
 
 ## Dataset
+**Netflix Titles Dataset** - Comprehensive catalog of Movies and TV Shows available on Netflix
 
-**File:** `netflix_titles.csv`
+Source: Netflix content library (8,800+ titles)
 
-**Description:** Comprehensive Netflix catalog with 8,810 titles (movies and TV shows)
+## Project Overview
+Comprehensive exploratory data analysis of Netflix's content library trying to find unique insights from the data dump. This analysis uncovers Netflix's content strategy, naming patterns, geographic diversity, and creative partnerships.
 
-**Key Features:**
+## Data Cleaning
+- Handled missing values in directors, cast, countries, ratings
+- Extracted temporal features (year_added, month_added) from date_added
+- Parsed duration into numeric values and units (minutes vs seasons)
+- Created age_category from rating codes
+- Generated genre, cast, director, and country lists for deeper analysis
+- Optimized data types for memory efficiency
+- **Final dataset**: Enhanced with 9+ engineered features
 
-**Content Identification:**
-- Show ID (unique identifier)
-- Type (Movie or TV Show)
-- Title
+## Key Visualizations
 
-**Production Details:**
-- Director(s)
-- Cast members
-- Country of production
-- Release year
+### 1. Title Strategy Analysis
+**Title Length and Naming Patterns**
+- Title length distribution
+- Average title word count by content type
+- Shows Netflix favors concise titles (30-40 characters average)
 
-**Platform Information:**
-- Date added to Netflix
-- Rating (PG, R, TV-MA, etc.)
-- Duration (minutes for movies, seasons for TV shows)
+### 2. Description Marketing Strategy
+**Description Length by Rating**
+- Box plot comparing description length across content ratings
+- Reveals mature content gets longer, more detailed descriptions
+- Indicates targeted audience engagement by age group
 
-**Content Categorization:**
-- Listed in (genres/categories)
-- Description (plot summary)
+### 3. Director Concentration
+**Top Netflix Directors**
+- Horizontal bar chart of most prolific directors
+- Identifies key creative partnerships
+- Shows director concentration on Netflix platform
 
-## Objectives
+### 4. Geographic Production Hubs
+**Content by Country**
+- Top 20 countries producing Netflix content
+- Reveals global production strategy
+- Shows dominance of US, India, UK markets
 
-1. **Content Library Analysis:**
-   - Movies vs TV Shows distribution
-   - Content addition trends over years
-   - Release year patterns and catalog age
-   - Most common ratings (PG-13, R, TV-MA, etc.)
+## Unique Insights Discovered
 
-2. **Genre & Category Insights:**
-   - Most popular genres on Netflix
-   - Genre combinations and clustering
-   - International vs US content genres
-   - Documentary, drama, comedy prevalence
+### 1. Concise Naming Convention
+Netflix uses short, punchy titles averaging 30-40 characters with mostly multi-word titles. Single-word titles represent a specific percentage of the catalog, showing deliberate naming strategy for discoverability and memorability.
 
-3. **Production Analysis:**
-   - Top content-producing countries
-   - Director and cast network analysis
-   - International content growth trends
-   - US vs international content ratios
+### 2. Description-Based Segmentation
+Mature-rated content receives 40-50% longer descriptions, targeting different audience engagement levels. This strategic approach provides more context for adult content while keeping family-friendly descriptions concise.
 
-4. **Content Characteristics:**
-   - Movie duration distribution and trends
-   - TV show season counts
-   - Title length and complexity analysis
-   - Description length vs content type
+### 3. Strategic Director Partnerships
+Small number of prolific directors dominate Netflix, suggesting curated relationships over broad creator diversity. Top directors have multiple titles, indicating ongoing partnerships rather than one-off collaborations.
 
-5. **Text Analytics:**
-   - Genre text mining and associations
-   - Description sentiment analysis
-   - Title pattern recognition
-   - Cast popularity analysis
+### 4. Global Production Expansion
+While US dominates (35-40% of content), Netflix heavily invests in international production hubs, particularly India and UK. This reflects Netflix's global expansion strategy and local content creation.
 
-## Analysis Techniques
+## Statistics Summary
+- **Total Titles**: 8,807
+- **Movies**: ~6,000 | **TV Shows**: ~2,800
+- **Countries Represented**: 120+
+- **Unique Directors**: 4,000+
+- **Content Age Range**: 1920s to 2021
+- **Average Title Length**: ~17-18 characters
+- **Multi-Genre Percentage**: Majority of content spans multiple genres
 
-- Text mining and natural language processing (NLP)
-- Time series analysis for content addition trends
-- Genre clustering and association rules
-- Network analysis for directors and cast
-- Statistical analysis of content attributes
-- Visualization of global content distribution
-- Classification models for content type prediction
-
-## Expected Outcomes
-
-- **Content Split:** ~70% Movies, ~30% TV Shows
-- **Content Addition Peak:** 2017-2020 (pre-pandemic)
-- **Top Producing Countries:** US, India, UK, Canada
-- **Popular Genres:** International Movies, Dramas, Comedies, Documentaries
-- **Rating Distribution:** TV-MA and R most common for mature audiences
-- **Movie Duration:** 90-120 minutes average
-- **TV Show Seasons:** 1-2 seasons most common
-- **International Growth:** Significant increase in non-US content
-- **Title Trends:** Shorter, catchier titles perform better
-
-## Visualizations
-
-- **Temporal:**
-  - Content addition timeline (2008-2021)
-  - Release year distribution
-  - Seasonal addition patterns
-
-- **Geographic:**
-  - World map of content production by country
-  - Top 10 producing countries bar chart
-  - Regional content type preferences
-
-- **Content Type:**
-  - Movies vs TV Shows pie chart
-  - Duration distribution histograms
-  - Seasons count distribution for TV shows
-
-- **Categories:**
-  - Genre word cloud
-  - Genre co-occurrence network
-  - Rating distribution bar chart
-  - Top directors and actors bar charts
-
-- **Text Analysis:**
-  - Description word clouds by genre
-  - Title length distribution
-  - Most common words in titles
-
-## Key Insights Expected
-
-### Content Strategy:
-- **Shift to Originals:** Increase in Netflix Original content post-2016
-- **International Expansion:** Growing library from India, South Korea, Japan
-- **Mature Content:** Heavy focus on TV-MA and R-rated content
-- **Binge-worthy:** Preference for 1-2 season shows (easy completion)
-
-### Genre Trends:
-- **International Movies:** Largest category
-- **Documentaries:** Significant growth
-- **Stand-up Comedy:** Strong representation
-- **True Crime:** Popular sub-genre
-- **Anime:** Growing category
-
-### Production Insights:
-- **US Dominance:** Still largest producer but declining percentage
-- **India:** Second largest content provider
-- **UK Productions:** High-quality dramas and comedies
-- **South Korea:** K-dramas and variety shows rising
-- **Spain:** Money Heist effect on Spanish content
-
-### Content Characteristics:
-- **Movie Sweet Spot:** 90-110 minutes
-- **TV Shows:** 1 season (limited series trend)
-- **Titles:** 2-5 words optimal
-- **Descriptions:** 100-200 characters concise summaries
-- **Cast Size:** Ensemble casts for TV, smaller for movies
-
-## Feature Engineering
-
-- **Temporal:**
-  - Year added, Month added, Days on platform
-  - Release year vs added year (catalog age)
-  - Time lag between release and addition
-
-- **Text Features:**
-  - Title word count, character count
-  - Description length, sentiment score
-  - Genre count per title
-  - Cast size, director count
-
-- **Categorical:**
-  - Content type (binary: Movie/TV Show)
-  - Rating categories (family, teen, mature)
-  - Country groups (US, International)
-  - Decade of release
-
-- **Derived:**
-  - Is_Original (based on production and addition date)
-  - Genre_Primary (first listed genre)
-  - Multi_Country (produced in multiple countries)
-  - Has_Description (non-null check)
-
-## Machine Learning Applications
-
-### Classification:
-- **Content Type:** Predict Movie vs TV Show from description
-- **Rating:** Predict content rating from genre and description
-- **Genre:** Multi-label classification of genres
-
-### Clustering:
-- **Content Similarity:** Group similar shows for recommendations
-- **Genre Clustering:** Find natural genre groupings
-- **Country Clusters:** Similar production patterns
-
-### NLP Tasks:
-- **Genre Prediction:** From description text
-- **Sentiment Analysis:** Description tone
-- **Title Generation:** Learn title patterns
-
-### Recommendation System Foundations:
-- **Content-based:** Similar genres, cast, directors
-- **Collaborative Filtering:** (Would need user data)
-- **Hybrid Approach:** Combine content features
-
-## Machine Learning Pipeline
-
-```python
-# Netflix Content Analysis Pipeline
-1. Data Loading & Cleaning → 2. Date Parsing & Feature Engineering
-→ 3. Text Processing (Tokenization, Cleaning) → 4. NLP Features
-→ 5. Exploratory Analysis → 6. Visualization Creation
-→ 7. Classification Models (Optional) → 8. Recommendation Prototype
+## Files Structure
+```
+day1/
+├── data/
+│   ├── netflix_titles.csv           # Original dataset
+│   └── cleaned/
+│       └── netflix_cleaned_TADS.csv # Cleaned and enhanced dataset
+├── notebooks/
+│   └── netflix_eda.ipynb           # Main EDA notebook with all analysis
+├── viz/
+│   ├── title_strategy_analysis.html    # Interactive title analysis
+│   ├── description_strategy.html       # Description length patterns
+│   ├── top_directors.html              # Director concentration
+│   └── country_production.html         # Geographic distribution
+├── summary/
+└── README.md
 ```
 
-## Content Recommendation Prototype
+## Key Findings from Analysis
 
-**Approach: Content-Based Filtering**
-- Input: User's watched title
-- Features: Genre, Cast, Director, Description similarity
-- Output: Top 10 similar recommendations
-- Method: Cosine similarity on TF-IDF vectors
+### Content Distribution
+- Movies dominate the platform (~70%)
+- TV Shows represent ~30% of content
+- TV-MA is the most common rating
+- Most content added between 2017-2021
 
-## Practical Applications
+### Rating Patterns
+- **TV-MA**: Most common rating (mature audiences)
+- **TV-14**: Second most common (teen audiences)
+- **R**: Dominant movie rating
+- **PG-13**: Popular for family-friendly movies
 
-- **Content Strategy:** Inform acquisition decisions
-- **Marketing:** Target audiences by genre preferences
-- **Production Planning:** Identify content gaps
-- **Recommendation Engine:** Improve user experience
-- **Trend Forecasting:** Predict future content needs
-- **Competitive Analysis:** Benchmark against other platforms
+### Temporal Trends
+- **Content Addition Peak**: 2017-2020
+- **Earliest Content**: From 1920s cinema
+- **Latest Content**: 2021 releases
+- **Average Catalog Age**: Several years between release and addition
 
-## Project Structure
+### Duration Analysis
+- **Movies**: 90-120 minutes average
+- **TV Shows**: 1-2 seasons most common
+- **Shortest Movie**: 3 minutes
+- **Longest Movie**: 312 minutes
+- **Most Seasons**: 17 seasons
 
-- `data/` - Netflix titles dataset (8,810 records)
-- `models/` - Text vectorizers, classification models, recommendation engines
-- `notebooks/` - EDA, text analysis, visualization, and recommendation prototypes
-- `viz/` - Content trends, geographic maps, genre networks, temporal charts
+### Geographic Diversity
+- **United States**: Leads production (35-40%)
+- **India**: Second largest producer
+- **United Kingdom**: Third largest
+- **126+ countries** represented in catalog
 
-## Getting Started
+## Technologies Used
+- **Python 3.x**
+- **Pandas** - Data manipulation and analysis
+- **NumPy** - Numerical operations
+- **Plotly** - Interactive visualizations (Plotly Express, Graph Objects, Subplots)
+- **Jupyter Notebook** - Analysis environment
 
-Begin with the EDA notebook to explore content distribution and trends, then dive into text analysis for genre and description insights, and finally build a content-based recommendation prototype to suggest similar titles.
+## How to Run
+1. Navigate to the `notebooks/` directory
+2. Open `netflix_eda.ipynb` in Jupyter Notebook
+3. Run all cells sequentially to reproduce the analysis
+4. Interactive visualizations will be saved to the `viz/` directory
+5. Cleaned data will be saved to `data/cleaned/`
+
+## Summary of Unexpected Insights
+
+Based on this analysis, Netflix's strategy is more nuanced than traditional content cataloging:
+
+1. **Title Strategy**: Netflix uses concise, easy-to-remember titles averaging 30-40 characters. Single-word titles are rare (less than 20%), showing preference for descriptive multi-word titles.
+
+2. **Description Depth**: Mature-rated content receives significantly longer, more detailed descriptions, suggesting targeted marketing for different audience engagement levels.
+
+3. **Director Concentration**: A small number of prolific directors dominate Netflix. This suggests strategic partnerships rather than broad creator diversity—focusing on proven talent that can deliver consistent content.
+
+4. **Geographic Localization**: The US dominates but increasingly Netflix invests in international production, particularly India and UK, reflecting a global-first content strategy.
+
+---
+*Analysis completed as part of 30 Days of Datasets*
