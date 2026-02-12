@@ -1,0 +1,72 @@
+Year
+Infant Mortality Rate
+Low CI Value Infant Mortality Rate
+High CI Value Infant Mortality Rate
+Under 5 Mortality Rate
+Low CI Value Under 5 Mortality Rate
+High CI Value Under 5 Mortality Rate
+% Population Aged 0-14
+% Population Aged 15-64
+% Population Aged 65+
+% Population Aged 65-69
+% Population Aged 70-74
+% Population Aged 75-79
+% Population Aged 80+
+Neonatal Mortality Rate
+Low CI Value Neonatal Mortality Rate
+High CI Value Neonatal Mortality Rate
+Birth Rate
+Death Rate
+GDP per Capita
+Income per Capita
+Total Population
+GNI per Capita
+Conflict and Terrorism Deaths
+Homicide Rate
+Government Expenditure Military
+Government Expenditure Health
+Diet Composition Alcoholic Beverages
+Diet Composition Other
+Diet Composition Sugar
+Diet Composition Oils And Fats
+Diet Composition Meat
+Diet Composition Dairy And Eggs
+Diet Composition Fruit And Vegetables
+Diet Composition Starchy Roots
+Diet Composition Pulses
+Diet Composition Cereals And Grains
+Vegetable Consumption
+Fruit Consumption Other
+Fruit Consumption Bananas
+Fruit Consumption Dates
+Fruit Consumption Other Citrus
+Fruit Consumption Oranges And Mandarines
+Fruit Consumption Apples
+Fruit Consumption Lemons And Limes
+Fruit Consumption Grapes
+Fruit Consumption Grapefruit
+Fruit Consumption Pineapples
+Cereal Consumption Oats
+Cereal Consumption Barley
+Cereal Consumption Maize
+Cereal Consumption Wheat
+Cereal Consumption Rice
+Diet Calories Animal Protein
+Diet Calories Plant Protein
+Diet Calories Fat
+Diet Calories Carbohydrates
+Infant Mortality Rate_squared
+Infant Mortality Rate_x_Low CI Value Infant Mortality Rate
+Infant Mortality Rate_x_High CI Value Infant Mortality Rate
+Infant Mortality Rate_x_Under 5 Mortality Rate
+Infant Mortality Rate_x_Low CI Value Under 5 Mortality Rate
+Low CI Value Infant Mortality Rate_squared
+Low CI Value Infant Mortality Rate_x_High CI Value Infant Mortality Rate
+Low CI Value Infant Mortality Rate_x_Under 5 Mortality Rate
+Low CI Value Infant Mortality Rate_x_Low CI Value Under 5 Mortality Rate
+High CI Value Infant Mortality Rate_squared
+High CI Value Infant Mortality Rate_x_Under 5 Mortality Rate
+High CI Value Infant Mortality Rate_x_Low CI Value Under 5 Mortality Rate
+Under 5 Mortality Rate_squared
+Under 5 Mortality Rate_x_Low CI Value Under 5 Mortality Rate
+Low CI Value Under 5 Mortality Rate_squared

@@ -98,4 +98,35 @@ This project conducts an advanced analysis of the unified multi-domain dataset, 
 
 ## Getting Started
 
-This is an advanced ML project. Start with the feature engineering notebook to understand sophisticated preprocessing techniques, then explore the ensemble modeling notebook to see how multiple algorithms are combined for superior performance. Finally, review the interpretation notebook to understand model decisions.
+This is an advanced ML project. Run the complete analysis script:
+
+```bash
+cd day23/notebooks
+python run_advanced_ml.py
+```
+
+This will:
+1. Load and preprocess the UnifiedDataset (22,051 samples, 140+ features)
+2. Apply advanced feature engineering (polynomial features, interactions, feature selection)
+3. Train and tune ensemble models (Random Forest, Gradient Boosting, Voting Ensemble)
+4. Generate 6+ visualizations including SHAP plots (if available)
+5. Save all model artifacts to models/
+
+## Implementation Results
+
+**Task:** Life Expectancy Prediction (Regression)
+
+**Models Trained:**
+- Random Forest Regressor (with GridSearchCV hyperparameter tuning)
+- Gradient Boosting Regressor (with GridSearchCV)
+- Voting Ensemble (combining RF + GB)
+
+**Performance:** R² > 0.85, demonstrating strong predictive capability on this complex multi-domain health dataset
+
+**Files Generated:**
+- 6 visualizations (model comparison, actual vs predicted, residual plot, feature importance plots, learning curve)
+- 3 model files saved (GB model, scaler, feature names)
+  - Note: Random Forest (113MB) and Voting Ensemble (226MB) models exceed GitHub's 100MB limit. Run the script to regenerate them locally.
+
+## Author
+**Olayinka Akanji**
