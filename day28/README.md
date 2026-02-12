@@ -1,106 +1,165 @@
-# Day 28: Meal & Food Data Analysis - Nutrition & Recommendations
+# Day 28: Fitness & Nutrition Tracking Analysis
 
-## Project Overview
+**Project Type:** Hybrid Health Analytics (Fitness + Meal Tracking Integration)
 
-This project analyzes meal and food data to understand nutritional patterns, dietary preferences, and build a foundation for food recommendation systems. By integrating meal composition data with nutritional metadata, we provide insights for healthy eating, meal planning, and dietary optimization.
+## Overview
+This project analyzes a comprehensive fitness and nutrition tracking dataset that combines workout metrics, exercise performance data, and meal logging. By integrating physical activity measurements with dietary intake records, we explore the relationships between exercise intensity, nutritional balance, and calorie management for health optimization.
 
-## Datasets
+## Dataset
 
-**Files:** 
-1. `Final_data.csv` - Comprehensive meal/food records with consumption patterns
-2. `meal_metadata.csv` - Nutritional information and meal characteristics
+**Files:**
+1. `Final_data.csv` - 20,000 records combining fitness tracking with meal logs
+2. `meal_metadata.csv` - 169 records with identical schema (subset for validation)
 
 **Key Features:**
-- **Meal Information:** Meal type (breakfast, lunch, dinner), cuisine category
-- **Nutritional Data:** Calories, protein, carbs, fats, fiber, vitamins
-- **Ingredients:** Main ingredients, allergen information
-- **Metadata:** Preparation time, serving size, difficulty level
-- **User Preferences:** Ratings, consumption frequency, dietary restrictions
-- **Health Indicators:** Nutritional balance scores, health tags
+
+**Fitness Metrics:**
+- Age, Gender, Weight, Height, BMI
+- Heart Rate measurements (Resting, Average, Max BPM)
+- Workout details (Type, Duration, Frequency, Experience Level)
+- Calories Burned, Fat Percentage, Water Intake
+
+**Exercise Data:**
+- Exercise Name, Sets, Reps, Target Muscle Group
+- Equipment Needed, Difficulty Level, Body Part
+- Expected Calorie Burn per 30min
+
+**Nutrition Tracking:**
+- Meal name, type (Breakfast/Lunch/Dinner/Snack), diet type (Keto/Paleo/Vegan/Vegetarian/Balanced/Low-Carb)
+- Macronutrients: Carbs, Proteins, Fats, Calories
+- Micronutrients: Sugar, Sodium, Cholesterol
+- Meal details: Serving size, cooking method, prep/cook time, rating
+
+**Calculated Metrics:**
+- Calorie balance (intake vs burned)
+- Macro percentages, protein per kg body weight
+- Heart rate reserve percentage
+- Lean mass estimation
 
 ## Objectives
 
-1. **Nutritional Analysis:**
-   - Caloric distribution across meal types
-   - Macronutrient balance assessment (protein, carbs, fats)
-   - Micronutrient content analysis
-   - Meal type nutritional profiles (breakfast vs lunch vs dinner)
+1. **Fitness Pattern Analysis:**
+   - Workout type distribution and intensity
+   - Heart rate profiles during exercise
+   - Relationship between workout frequency and fitness metrics
+   - Calorie burn patterns across workout types
 
-2. **Dietary Pattern Discovery:**
-   - Cuisine type popularity and nutritional characteristics
-   - Healthy vs indulgent meal clustering
-   - Meal combination patterns
-   - Temporal eating patterns (if timestamp data available)
+2. **Nutrition Analysis:**
+   - Diet type preferences and macro profiles
+   - Meal type nutritional characteristics
+   - Micronutrient intake assessment
+   - Cooking method impact on nutrition
 
-3. **Multi-Dataset Integration:**
-   - Join meal data with nutritional metadata
-   - Enrich records with calculated metrics
-   - Cross-reference ingredient lists with nutrition facts
-   - Build comprehensive meal profiles
+3. **Fitness-Nutrition Integration:**
+   - Calorie balance analysis (deficit/surplus patterns)
+   - Protein intake vs body weight relationship
+   - Workout intensity correlation with dietary choices
+   - Recovery nutrition patterns
 
-4. **Recommendation System Foundations:**
-   - Meal similarity clustering
-   - Nutritional goal-based filtering
-   - Ingredient substitution analysis
-   - Balanced meal plan generation
+4. **Predictive Modeling:**
+   - Workout type classification based on fitness metrics
+   - Diet type prediction using nutrition + fitness features
+   - Calorie balance category prediction
 
-## Analysis Techniques
+## Analysis Performed
 
-- Multi-source data integration and joining
-- Nutritional scoring and classification
-- Clustering for meal grouping (K-Means, DBSCAN)
-- Recommendation algorithms (content-based filtering)
-- Feature engineering (macro ratios, calorie density)
-- Statistical analysis of dietary patterns
-- Visualization of nutritional balance
+- Exploratory Data Analysis (EDA) with 9 visualizations
+- Statistical analysis of fitness and nutrition distributions
+- Correlation analysis between fitness metrics and nutrition
+- Classification modeling (Random Forest)
+- Feature importance analysis for workout and diet predictions
 
-## Expected Outcomes
+## Models
 
-- Comprehensive nutritional profile dashboard
-- Meal type characteristic identification
-- Cuisine-based nutritional insights
-- Ingredient-nutrition correlation analysis
-- Meal clustering by nutritional similarity
-- Recommendation prototype for healthy alternatives
-- Balanced meal plan templates
-- Dietary guideline compliance scoring
+**Model 1: Workout Type Classification**
+- Algorithm: Random Forest Classifier (n_estimators=100, max_depth=10)
+- Features: Age, BMI, Heart Rate metrics, Fat %, Water Intake, Workout Frequency
+- Target: Workout Type (Cardio / HIIT / Strength / Yoga)
+- Accuracy: ~26% (baseline performance - features show limited direct prediction power)
 
-## Visualizations
+**Model 2: Diet Type Classification**
+- Algorithm: Random Forest Classifier (n_estimators=100, max_depth=10)
+- Features: Age, BMI, Calories Burned, Macros, Calorie Balance
+- Target: Diet Type (Balanced / Keto / Low-Carb / Paleo / Vegan / Vegetarian)
+- Accuracy: ~16% (challenging multi-class problem with overlapping patterns)
 
-- Calorie distribution histograms by meal type
-- Macronutrient ratio pie charts
-- Nutritional balance radar charts
-- Cuisine comparison box plots
-- Ingredient frequency word clouds
-- Meal cluster scatter plots (using PCA/t-SNE)
-- Correlation heatmap of nutritional features
-- Time-based consumption patterns
+**Note:** Low model accuracy indicates that workout type and diet type are not directly predictable from basic fitness/nutrition metrics alone - they reflect personal preference more than physiological constraints.
 
-## Key Insights Expected
+## Key Findings
 
-- Breakfast meals typically lower calorie than lunch/dinner
-- Certain cuisines naturally more balanced nutritionally
-- Protein content varies significantly by meal type
-- Calorie density differs across preparation methods
-- Ingredient combinations impact overall nutrition
-- Healthy meals cluster together based on macro ratios
-- Preparation time doesn't correlate strongly with health scores
+- **Workout Distribution**: Balanced across types (Strength: 25%, Yoga: 25%, HIIT: 25%, Cardio: 25%)
+- **Diet Preferences**: Paleo and Low-Carb most common (~17% each), followed by Vegan/Vegetarian/Keto/Balanced
+- **Meal Patterns**: Relatively uniform across Breakfast/Lunch/Dinner/Snack
+- **Calorie Balance**: Wide range from large deficits to large surpluses
+- **Heart Rate**: Max BPM typically 170-190, Average 130-160, Resting 50-75
+- **Macros by Meal**: Lunch and Dinner contain higher protein/carbs than Breakfast on average
+- **Correlations**: Weak correlations between workout type and diet type - indicates independent choices
 
-## Nutritional Metrics
+## Files
 
-- **Calorie Density:** Calories per serving size
-- **Macro Ratios:** Protein/Carb/Fat percentages
-- **Nutrition Score:** Composite health score
-- **Balance Index:** Distribution across food groups
-- **Fiber Content:** Dietary fiber adequacy
+```
+day28/
+├── data/
+│   ├── Final_data.csv           # Main dataset (20,000 records, 54 features)
+│   └── meal_metadata.csv        # Validation subset (169 records)
+├── notebooks/
+│   └── run_analysis.py          # Complete analysis script
+├── models/
+│   ├── workout_type_rf_model.joblib
+│   ├── diet_type_rf_model.joblib
+│   ├── workout_scaler.joblib
+│   ├── diet_scaler.joblib
+│   ├── workout_label_encoder.joblib
+│   └── diet_label_encoder.joblib
+├── viz/
+│   ├── workout_diet_distribution.png
+│   ├── calories_by_workout.png
+│   ├── fitness_metrics_scatter.png
+│   ├── calorie_balance_distribution.png
+│   ├── meal_type_macros.png
+│   ├── heart_rate_distributions.png
+│   ├── correlation_heatmap.png
+│   ├── confusion_matrices.png
+│   └── feature_importance.png
+└── README.md
+```
 
-## Project Structure
+## Requirements
 
-- `data/` - Two datasets (meal data and metadata) with integration scripts
-- `models/` - Clustering models, recommendation algorithms, scoring systems
-- `notebooks/` - Data integration, nutritional analysis, and recommendation notebooks
-- `viz/` - Nutritional dashboards, meal comparisons, dietary pattern visualizations
+```
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+joblib
+```
 
-## Getting Started
+## Usage
 
-Start with the data integration notebook to understand how the two datasets connect, then explore the nutritional analysis notebook for comprehensive dietary insights, and finally review the recommendation prototype for meal planning ideas.
+Run the analysis script to generate all visualizations and train models:
+
+```bash
+cd day28/notebooks
+python run_analysis.py
+```
+
+This will:
+1. Load and clean the fitness + nutrition dataset
+2. Generate 9 visualization files (saved to viz/)
+3. Train workout type and diet type classification models
+4. Evaluate model performance with confusion matrices
+5. Analyze feature importance
+6. Save all 6 model artifacts to models/
+
+## Potential Extensions
+
+- Time-series analysis if temporal data added
+- Clustering to identify fitness-nutrition personas
+- Regression to predict calorie balance outcomes
+- Recommendation system for balanced nutrition based on workout intensity
+- Anomaly detection for extreme fitness/nutrition patterns
+- Causal analysis: Does workout type influence diet choice or vice versa?
+
+## Author
+**Olayinka Akanji**
